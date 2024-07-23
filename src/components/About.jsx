@@ -4,7 +4,8 @@ function About(){
   return (
     <div>
       <h1>About Me</h1>
-      <p>Hello! My name is Ladan Torkzaban, and I am a passionate Junior Full Stack Developer. I love creating dynamic and responsive web applications that offer great user experiences. With a solid foundation in both front-end (HTML, CSS, JavaScript, React) and back-end (Node.js, Express, MongoDB) technologies, I am always eager to learn and take on new challenges. My enthusiasm for technology drives me to constantly improve my skills and contribute to meaningful projects. I am excited to bring my energy and creativity to a dynamic team and build innovative web solutions.</p>
+      <p>
+Hello! I’m Ladan Torkzaban, a Junior Full Stack Developer committed to crafting interactive and seamless web applications. With expertise in front-end technologies like HTML, CSS, JavaScript, and React, coupled with back-end experience in Node.js, Express, and MongoDB, I thrive on developing solutions that elevate user experiences. My dedication to technology fuels my continuous learning and drives me to tackle new challenges. I am eager to bring my unique perspective and enthusiasm to a team, contributing to innovative and impactful web projects.</p>
     </div>
   );
 };
