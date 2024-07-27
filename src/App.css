@@ -7,7 +7,7 @@ body {
 nav {
   background-color: #333;
   padding: 1rem;
-  position: fixed;
+  position: center;
   width: 100%;
 }
 
@@ -33,30 +33,34 @@ footer {
   color: white;
   text-align: center;
   padding: 1rem;
-  position: fixed;
+  margin-bottom:0rem;
+  margin-right:0rem;
+  position: center;
   width: 100%;
   bottom: 0;
 }
 
 div {
-  padding: 2rem;
+  padding: 5rem;
 }
 
 /* Contact CSS */
 
 .contact-list {
   list-style: none;
-  padding: 0;
+  padding: 2rem;
+  margin-right:30rem;
+  width: 100%;
 }
 
 .contact-list li {
-  margin: 1rem 0;
+  margin: 2rem 0rem;
   display: flex;
   align-items: center;
 }
 
 .contact-list li .fa-icon {
-  margin-right: 0.5rem;
+  margin-right: 6rem;
 }
 
 /* Projects.css */
