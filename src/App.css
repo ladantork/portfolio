@@ -7,8 +7,8 @@ body {
 nav {
   background-color: #333;
   padding: 1rem;
-  position: center;
   width: 100%;
+  
 }
 
 nav ul {
@@ -34,7 +34,7 @@ footer {
   text-align: center;
   padding: 1rem;
   margin-bottom:0rem;
-  margin-right:0rem;
+  margin-right:100rem;
   position: center;
   width: 100%;
   bottom: 0;
@@ -48,9 +48,7 @@ div {
 
 .contact-list {
   list-style: none;
-  padding: 2rem;
-  margin-right:30rem;
-  width: 100%;
+  padding: 2rem
 }
 
 .contact-list li {
@@ -81,8 +79,11 @@ div {
 }
 
 .project-description {
-  flex: 1;
+  /* flex: 1; */
   margin-right: 2rem;
+  display: block;
+  align-items: center;
+ 
 }
 
 .project-image {

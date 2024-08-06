@@ -48,7 +48,10 @@ function Projects() {
             <br /><br />
             The application was planned, designed, and developed in a week during the Northcoders Software Engineering Bootcamp.</p>
           </div>
+         
+
           <img src={projectImage} alt="NC-NEWS" className="project-image" />
+          
         </div>
       </div>
 
