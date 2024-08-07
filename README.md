@@ -1,4 +1,4 @@
-# React + Vite
+# React + Vite App
 
 This portfolio is a React application bootstrapped with Vite. experience.
 
