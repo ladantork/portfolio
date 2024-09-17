@@ -81,3 +81,6 @@ Ladan Torkzaban
 ├── package-lock.json
 ├── README.md
 └── vite.config.js
+### Deployed with Netlify
+
+https://ladan-torkzaban-portfolio.netlify.app/
