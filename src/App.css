@@ -11,6 +11,7 @@ nav {
   padding: 1rem;
   width: 100%;
   border-radius:0.5rem;
+  box-shadow: 1px 2px 3px 4px rgb(206, 138, 4);
   
 }
 
@@ -42,6 +43,9 @@ footer {
   width: 100%;
   bottom: 0;
   border-radius:0.5rem;
+  border-color: rgb(243, 164, 6);
+  box-shadow: 1px 2px 3px 4px rgb(206, 138, 4);
+
 }
 
 div {
