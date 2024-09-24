@@ -6,107 +6,80 @@ body {
   width: 100%;
 }
 
-nav {
-  background-color: #7f105f;
-  padding: 1rem;
-  width: 100%;
-  border-radius:0.5rem;
-  box-shadow: 1px 2px 3px 4px rgb(206, 138, 4);
-  
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: space-around;
-  margin: 0;
-  padding: 0;
-}
-
-nav ul li {
-  margin: 0 1rem;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-}
-
-footer {
-  background-color: #7f105f;
-  color: white;
-  text-align: center;
-  padding: 1rem;
-  margin-bottom:0rem;
-  margin-right:100rem;
-  position: center;
-  width: 100%;
-  bottom: 0;
-  border-radius:0.5rem;
-  border-color: rgb(243, 164, 6);
-  box-shadow: 1px 2px 3px 4px rgb(206, 138, 4);
-
-}
-
-div {
-  padding: 5rem;
-}
-
-/* Contact CSS */
-
-.contact-list {
-  list-style: none;
-  padding: 2rem
-}
-
-.contact-list li {
-  margin: 2rem 0rem;
-  display: flex;
-  align-items: center;
-}
-
-.contact-list li .fa-icon {
-  margin-right: 6rem;
-}
-
-
-/* Projects.css */
-
-.projects-container {
+/* Container for the entire app */
+.app-container {
   padding: 2rem;
-}
-
-.project {
-  margin-bottom: 2rem;
-}
-
-.project-content {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.project-description {
-  /* flex: 1; */
-  margin-right: 2rem;
-  display: block;
-  align-items: center;
- 
-}
-
-.project-image {
-  width: 100%;
-  max-width: 600px;
-  height: auto;
-  display: block;
+  flex-direction: column;
   align-items: center;
 }
 
-h1, h2 {
+/* Styling for each card */
+.card {
+  background-color: #7f105f;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  width: 300px; /* Adjust width as needed */
+  text-align: center;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative; /* Ensure positioning for expanded effect */
+}
+
+/* Hover effect for cards */
+.card:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transform: scale(1.02);
+}
+
+/* Content inside the expanded card */
+.card-content {
+  margin-top: 1rem;
+  background-color: #f3eef1;
   color: #333;
+  padding: 1rem;
+  border-radius: 5px;
+  text-align: left;
+  max-height: 70vh; /* Limit height for overflow */
+  overflow-y: auto; /* Allow scrolling if content overflows */
 }
 
-p {
-  color: #666;
+/* Expanded state styles */
+.card.expanded {
+  position: fixed; /* Make card fill the viewport */
+  top: 0;
+  left: 0;
+  width: 100vw; /* Full width */
+  height: 100vh; /* Full height */
+  z-index: 1000; /* Ensure it’s on top of other elements */
+  margin: 0; /* Remove margin */
+  border-radius: 0; /* Remove rounded corners */
+  display: flex; /* Use flexbox for content alignment */
+  flex-direction: column; /* Stack content vertically */
+  padding: 20px; /* Add padding to the expanded card */
+  box-sizing: border-box; /* Include padding in width/height */
 }
 
+/* To ensure the content fills the expanded card */
+.card.expanded .card-content {
+  flex: 1; /* Allow card content to grow */
+  overflow-y: auto; /* Allow scrolling if content overflows */
+  padding: 20px; /* Add padding inside the content */
+}
+
+/* Navigation cards as flexbox */
+.nav-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 90%;
+  }
+}
