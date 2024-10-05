@@ -79,6 +79,20 @@ body {
   flex-wrap: wrap;
   justify-content: center;
 }
+/* Contact List Styles */
+.contact-list {
+  list-style-type: none; /* Removes the default bullet point */
+  padding: 0;         /* Removes the default padding */
+}
+
+.contact-list li {
+  display: flex;          /* Ensures items are displayed in a row (optional) */
+  align-items: center;    /* Vertically aligns icons */
+}
+
+.fa-icon {
+  margin-right: 90px; /* Adds a gap between the icons */
+}
 
 @media (max-width: 768px) {
   .card {

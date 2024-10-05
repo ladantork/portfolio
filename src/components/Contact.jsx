@@ -20,9 +20,9 @@ function Contact(){
           rel="noopener noreferrer"
           className="cv-link"
         >
-          here
+          here .
         </a>
-        .
+        
       </p>
       <p>
         Alternatively, you can reach out to me through any of the contact methods listed below:
