@@ -34,7 +34,7 @@ body {
 
 /* Hover effect for cards */
 .card:hover {
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px 5px rgb(255, 136, 0); /* Strong orange shadow */
   transform: scale(1.02);
 }
 
@@ -64,6 +64,7 @@ body {
   flex-direction: column; /* Stack content vertically */
   padding: 20px; /* Add padding to the expanded card */
   box-sizing: border-box; /* Include padding in width/height */
+
 
 }
 
