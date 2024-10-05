@@ -84,3 +84,7 @@ Ladan Torkzaban
 ### Deployed with Netlify
 
 https://ladan-torkzaban-portfolio.netlify.app/
+
+
+### Run Locally
+http://localhost:5173/
