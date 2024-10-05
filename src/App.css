@@ -11,14 +11,21 @@ body {
 /* Container for the entire app */
 .app-container {
   padding: 2rem;
+
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+
+  background-color: rgb(73, 120, 71); /* Orange background */
+
+  border-radius: 10px;      /* Rounded corners for the orange box */
+  max-width: 600px;  
+  
 }
 
 /* Styling for each card */
 .card {
-  background-color: #7f105f;
+  background-color: #bdb874;
   border: 1px solid #ccc;
   border-radius: 10px;
   padding: 20px;
@@ -34,7 +41,7 @@ body {
 
 /* Hover effect for cards */
 .card:hover {
-  box-shadow: 0 0 10px 5px rgb(255, 136, 0); /* Strong orange shadow */
+  box-shadow: 0 0 10px 5px rgb(204, 88, 17); /* Strong orange shadow */
   transform: scale(1.02);
 }
 
