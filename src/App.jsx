@@ -31,6 +31,7 @@ import About from './components/About';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 
+
 function App() {
   const [activeSection, setActiveSection] = useState(null); // To track the active section
   const [expanded, setExpanded] = useState(false); // State to manage expansion
@@ -47,7 +48,7 @@ function App() {
   };
 
   return (
-    <div className="app-container">
+    <div className="app-container" >
       {/* Home Card */}
       <div className={`card ${expanded && activeSection === 'home' ? 'expanded' : ''}`} onClick={() => handleCardClick('home')}>
         <h2>Home</h2>
