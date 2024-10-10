@@ -1,3 +1,10 @@
+
+
+
+
+
+
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -16,17 +23,20 @@ body {
   flex-direction: column;
   align-items: center;
 
-  background-color: rgb(73, 120, 71); /* Orange background */
+  background-color: rgb(73, 120, 71); 
 
   border-radius: 10px;      /* Rounded corners for the orange box */
   max-width: 600px;  
-  
+
+  width: 100%;              /* Ensure the box is responsive */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for some depth */
+
 }
 
 /* Styling for each card */
 .card {
   background-color: #bdb874;
-  border: 1px solid #ccc;
+  border: 1px solid #cdcaca;
   border-radius: 10px;
   padding: 20px;
   margin: 10px;
@@ -41,7 +51,7 @@ body {
 
 /* Hover effect for cards */
 .card:hover {
-  box-shadow: 0 0 10px 5px rgb(204, 88, 17); /* Strong orange shadow */
+  box-shadow: 0 0 10px 5px rgb(231, 160, 117); /* Strong orange shadow */
   transform: scale(1.02);
 }
 
