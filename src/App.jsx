@@ -24,7 +24,7 @@
 //     </Router>
 //   );
 // };
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import Home from './components/Home'; // Import the Home component
 import About from './components/About';
@@ -46,6 +46,19 @@ function App() {
       setExpanded(true); // Expand the card
     }
   };
+   // Use effect to load the counter script
+   useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://cdn.counter.dev/script.js';
+    script.setAttribute('data-id', 'f71d28ef-4eb6-47c0-8cfb-4c794c64558c');
+    script.setAttribute('data-utcoffset', '1');
+    script.async = true;
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script); // Clean up the script on component unmount
+    };
+  }, []);
 
   return (
     <div className="app-container" >
@@ -56,7 +69,9 @@ function App() {
           <div className="card-content">
             <Home />
           </div>
+          
         )}
+        
       </div>
 
       {/* About Card */}
@@ -88,8 +103,13 @@ function App() {
           </div>
         )}
       </div>
+      {/* The Counter will automatically be displayed by the script. */}
+      <div className="counter-dev" style={{ textAlign: 'center', marginTop: '20px' }}>
+        <p>Visitor Count:</p>
+      </div>
     </div>
   );
+  
 }
 
 export default App;
