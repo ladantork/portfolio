@@ -27,6 +27,8 @@ npm install
 
 npm run dev
 
+http://localhost:5173/
+
 ### overview of the project structure at start point
 
 Ladan Torkzaban
@@ -86,5 +88,3 @@ Ladan Torkzaban
 https://ladan-torkzaban-portfolio.netlify.app/
 
 
-### Run Locally
-http://localhost:5173/
